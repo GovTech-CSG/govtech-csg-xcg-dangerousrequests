@@ -64,7 +64,7 @@ DANGEROUS_REQUESTS_RUN_FLAKY_TESTS=true /bin/bash run_all_tests.sh
 
 There are a few test methods within the test suite that make HTTP requests over the internet. These are non-ideal from an automated testing perspective as they can fail intermittently due to issues such as network error.
 
-Until these are replaced with better means of testing, developers can choose to skip those tests by dropping `DANGEROUS_REQUESTS_RUN_FLAKY_TESTS=true` from the command given above.
+Until these are replaced with better means of testing, developers can choose to skip those tests by dropping `DANGEROUS_REQUESTS_RUN_FLAKY_TESTS=true` from the command given above. These tests will not run in the CI by default.
 
 ## Running pre-commit hooks
 
