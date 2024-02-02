@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+    <head>
+        <title>Dangerous requests test website</title>
+    </head>
+    <body>
+        <form action="{% url 'test-view' %}" method="POST">
+            <label for="target-url">Target URL:</label>
+            <input type="url" id="target-url" name="target-url" required />
+            <input type="hidden" id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+        </form>
+        {{ result }}
+    </body>
+</html>
