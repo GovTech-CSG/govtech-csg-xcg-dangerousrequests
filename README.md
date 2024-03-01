@@ -1,5 +1,7 @@
 # govtech-csg-xcg-dangerousrequests
 
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/8501/badge)](https://www.bestpractices.dev/projects/8501)
+
 This package belongs to the **eXtended Code Guardrails (XCG)** project, which consists of a series of packages that harden the Django web framework to prevent common web application vulnerabilities.
 
 The Dangerous Requests package contains a Django app that protects your application against dangerous requests. More specifically, this package protects against SSRF attempts when you use the [`requests` library](https://requests.readthedocs.io/en/latest/) in your application. This is achieved by (transparently) leveraging on the [`advocate` library](https://github.com/JordanMilne/Advocate) under the hood.
